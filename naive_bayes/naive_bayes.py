@@ -3,12 +3,20 @@ from collections import defaultdict
 
 class NaiveBayesClassifier:
     def __init__(self):
+        """
+        Initialize the Naive Bayes classifier.
+        """
         self.class_priors = defaultdict(float)
         self.feature_likelihoods = defaultdict(lambda: defaultdict(float))
         self.classes = set()
         self.vocab = set()
 
     def fit(self, X, y):
+        """
+        Fit the classifier to the training data.
+        :param X: List of feature lists
+        :param y: List of class labels
+        """
         n_samples = len(X)
         self.classes = set(y)
         for label in self.classes:
@@ -25,6 +33,11 @@ class NaiveBayesClassifier:
                 self.feature_likelihoods[label][word] = (word_counts[word] + 1) / (total_count + len(self.vocab))
 
     def predict(self, X):
+        """
+        Predict class labels for given samples.
+        :param X: List of feature lists
+        :return: List of predicted class labels
+        """
         preds = []
         for x in X:
             class_scores = {}
