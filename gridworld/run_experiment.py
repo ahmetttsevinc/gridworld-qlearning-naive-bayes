@@ -5,7 +5,7 @@ from qlearning_agent import QLearningAgent
 def main():
     size = 4
     win_state = (size-1, size-1)
-    # Bloklu durumları rastgele seç
+    # Randomly select blocked states
     all_states = [(i, j) for i in range(size) for j in range(size) if (i, j) not in [(0,0), win_state]]
     block_states = random.sample(all_states, 2)
     env = GridWorld(size=size, win_state=win_state, block_states=block_states)
@@ -23,7 +23,7 @@ def main():
         if (ep+1) % 100 == 0:
             print(f"Episode {ep+1} finished.")
     print("Q-table size:", len(agent.q_table))
-    print("Block states:", block_states)
+    print("Blocked states:", block_states)
 
 if __name__ == "__main__":
     main() 
