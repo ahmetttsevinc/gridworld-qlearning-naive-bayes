@@ -1,0 +1,3 @@
+# Sadece Python 3 standard library yeterlidir
+# Eğer görselleştirme veya ek analiz istenirse aşağıdaki satırı açabilirsiniz:
+# matplotlib 
