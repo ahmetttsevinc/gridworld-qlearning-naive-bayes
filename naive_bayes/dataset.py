@@ -1,5 +1,8 @@
 def load_sample_dataset():
-    # Basit bir metin sınıflandırma veri seti
+    """
+    Returns a simple text classification dataset (weather example).
+    :return: X (features), y (labels)
+    """
     X = [
         ["sunny", "hot", "high", "weak"],
         ["sunny", "hot", "high", "strong"],
