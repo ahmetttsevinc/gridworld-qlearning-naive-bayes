@@ -1,38 +1,38 @@
 # GridWorld Q-Learning & Naive Bayes Classifier
 
-Bu projede iki ana bölüm bulunmaktadır:
+This project consists of two main parts:
 
-1. **4x4 GridWorld için Q-Learning ajanı**
-2. **Naive Bayes sınıflandırıcı (sıfırdan)**
+1. **Q-Learning agent for a 4x4 GridWorld**
+2. **Naive Bayes classifier (from scratch)**
 
-## Klasör Yapısı
+## Folder Structure
 
 ```
 gridworld/
-    environment.py      # GridWorld ortamı
-    qlearning_agent.py  # Q-Learning algoritması
-    run_experiment.py   # Deneysel çalışma
+    environment.py      # GridWorld environment
+    qlearning_agent.py  # Q-Learning algorithm
+    run_experiment.py   # Experiment script
 
 naive_bayes/
-    naive_bayes.py      # Naive Bayes algoritması
-    dataset.py          # Örnek veri seti
-    run_experiment.py   # Deneysel çalışma
+    naive_bayes.py      # Naive Bayes algorithm
+    dataset.py          # Sample dataset
+    run_experiment.py   # Experiment script
 ```
 
-## Çalıştırma
+## How to Run
 
-GridWorld Q-Learning için:
+For GridWorld Q-Learning:
 ```
 cd gridworld
 python run_experiment.py
 ```
 
-Naive Bayes için:
+For Naive Bayes:
 ```
 cd naive_bayes
 python run_experiment.py
 ```
 
-## Notlar
-- Ana algoritmalar sıfırdan yazılmıştır, hazır kütüphane kullanılmamıştır.
-- Kodlar modüler ve açıklamalıdır. 
+## Notes
+- All main algorithms are implemented from scratch, no ready-made libraries are used.
+- The code is modular and well-commented.
